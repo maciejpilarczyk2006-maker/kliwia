@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap");
+
+:root {
+  font-family: "Inter", sans-serif;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+
+  /* GŁÓWNE TŁA */
+  --color-bg: #f8f5ef;
+  --color-bg-soft: #eee8df;
+  --color-bg-muted: #cfc4b7;
+
+  /* TEKST */
+  --color-text: #292720;
+  --color-text-soft: #615c53;
+
+  /* ZIELEŃ KLIWII */
+  --color-green: #657054;
+  --color-green-dark: #4f5941;
+  --color-green-soft: #cfd5c4;
+  --color-green-pale: #e5e8de;
+
+  --color-dark: #292720;
+  --color-white: #ffffff;
+  --color-line: #b9afa3;
+
+  --container: 1280px;
+  --transition: 0.3s ease;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-weight: 300;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#root {
+  min-height: 100vh;
+}
