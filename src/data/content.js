@@ -24,17 +24,16 @@
 export const salon = {
   name: "Kliwia",
 
-  phone: "+48 000 000 000",
-  phoneHref: "+48000000000",
+  phone: "+48 68 324 60 01",
+  phoneHref: "+48683246001",
 
-  email: "kontakt@kliwia.pl",
+  email: "kliwiazg.salon@gmail.com",
 
   address: {
-    street: "ul. Przykładowa 10",
-    city: "65-000 Zielona Góra",
-    full: "ul. Przykładowa 10, 65-000 Zielona Góra",
-  },
-
+  street: "Kazimierza Lisowskiego 19",
+  city: "65-072 Zielona Góra",
+  full: "Kazimierza Lisowskiego 19, 65-072 Zielona Góra, Polska",
+},
   openingHours: [
     {
       days: "Poniedziałek – Piątek",
@@ -57,8 +56,8 @@ export const salon = {
 // --------------------
 
 export const socialMedia = {
-  instagram: "",
-  facebook: "",
+  instagram: "https://www.instagram.com/salon_kliwia/",
+  facebook: "https://www.facebook.com/SalonKosmetycznyKliwia/",
 };
 
 
@@ -310,13 +309,14 @@ export const contactSection = {
 // --------------------
 
 export const maps = {
-  // Podmienimy po otrzymaniu prawdziwego adresu.
-  googleMapsUrl: "",
+  googleMapsUrl:
+    "https://www.google.com/maps/place//data=!4m2!3m1!1s0x470613e950832e4f:0xfaa4dcba682f6f39?sa=X&ved=1t:8290&ictx=111",
 
-  appleMapsUrl: "",
+  appleMapsUrl:
+    "https://maps.apple.com/?q=Kazimierza+Lisowskiego+19,+65-072+Zielona+Góra,+Polska",
 
-  // Kod iframe Google Maps dodamy później.
-  embedUrl: "",
+  embedUrl:
+    "https://www.google.com/maps?q=Kazimierza+Lisowskiego+19,+65-072+Zielona+Góra,+Polska&output=embed",
 };
 
 
