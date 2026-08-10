@@ -73,26 +73,26 @@ function Contact() {
             <DirectionsButton />
           </div>
 
-          <div className="contact-map">
-            {maps.embedUrl ? (
-              <iframe
-                src={maps.embedUrl}
-                title="Mapa salonu Kliwia"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                allowFullScreen
-              />
-            ) : (
-              <div className="contact-map-placeholder">
-                <span>MAPA GOOGLE</span>
+         <div className="contact-map">
+  {maps.embedUrl ? (
+    <iframe
+      src={maps.embedUrl}
+      title="Mapa salonu Kliwia"
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      allowFullScreen
+    />
+  ) : (
+    <div className="contact-map-placeholder">
+      <span>MAPA GOOGLE</span>
 
-                <p>
-                  Mapę podłączymy po dodaniu
-                  prawdziwego adresu salonu.
-                </p>
-              </div>
-            )}
-          </div>
+      <p>
+        Mapę podłączymy po dodaniu
+        prawdziwego adresu salonu.
+      </p>
+    </div>
+  )}
+</div>
         </div>
       </div>
     </section>

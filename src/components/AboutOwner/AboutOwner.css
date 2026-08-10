@@ -1,0 +1,830 @@
+/* =========================================================
+   ABOUT OWNER
+========================================================= */
+
+.owner-section {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 110px 0 100px;
+
+  background: #f8f5ef;
+  color: var(--color-text);
+}
+
+.owner-container {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.92fr)
+    minmax(520px, 1.08fr);
+
+  align-items: center;
+
+  gap: clamp(35px, 4vw, 70px);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.owner-content {
+  position: relative;
+  z-index: 5;
+}
+
+.owner-eyebrow {
+  margin: 0 0 28px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: var(--color-green);
+}
+
+.owner-title {
+  max-width: 680px;
+
+  margin: 0;
+
+  font-family: var(--font-serif);
+
+  font-size: clamp(58px, 5vw, 82px);
+  font-weight: 400;
+
+  line-height: 0.96;
+  letter-spacing: -0.045em;
+
+  color: var(--color-text);
+}
+
+.owner-title-line {
+  width: 48px;
+  height: 1px;
+
+  margin-top: 32px;
+
+  background: var(--color-green);
+}
+
+.owner-intro {
+  max-width: 650px;
+
+  margin: 30px 0 0;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  color: #504a42;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.owner-features {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 28px;
+
+  margin-top: 48px;
+}
+
+.owner-feature {
+  display: grid;
+
+  grid-template-columns: 48px minmax(0, 1fr);
+
+  align-items: start;
+
+  gap: 15px;
+}
+
+.owner-feature-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: var(--color-green);
+
+  color: #ffffff;
+}
+
+.owner-feature:nth-child(2) .owner-feature-icon {
+  background: #b7a187;
+}
+
+.owner-feature-icon svg {
+  width: 19px;
+  height: 19px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.owner-feature-copy h3 {
+  margin: 2px 0 9px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #28261f;
+}
+
+.owner-feature-copy p {
+  margin: 0;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+
+  color: #655e54;
+}
+
+
+/* =========================================================
+   CLOSING
+========================================================= */
+
+.owner-closing {
+  max-width: 640px;
+
+  margin: 44px 0 0;
+
+  font-size: 13px;
+
+  line-height: 1.75;
+
+  color: #595249;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.owner-button {
+  min-height: 50px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  padding: 0 27px;
+
+  border: 1px solid var(--color-green);
+
+  background: var(--color-green);
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.owner-button:hover {
+  background: var(--color-green-dark);
+
+  border-color: var(--color-green-dark);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   DESKTOP IMAGE COLUMN
+========================================================= */
+
+.owner-desktop-image {
+  position: relative;
+
+  align-self: stretch;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================================
+   IMAGE COMPOSITION
+========================================================= */
+
+.owner-visual {
+  position: relative;
+
+  width: 100%;
+  min-height: 720px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /*
+    To właśnie podnosi zdjęcie na desktopie.
+  */
+
+  transform: translateY(-45px);
+}
+
+
+/* =========================================================
+   SOFT BACKGROUND
+========================================================= */
+
+.owner-soft-shape {
+  position: absolute;
+
+  z-index: 0;
+
+  width: 115%;
+  height: 95%;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(218, 209, 196, 0.52) 0%,
+      rgba(232, 225, 214, 0.28) 42%,
+      rgba(248, 245, 239, 0) 72%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   OWNER IMAGE
+========================================================= */
+
+.owner-image-wrapper {
+  position: relative;
+
+  z-index: 2;
+
+  width: 720px;
+  max-width: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.owner-image {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+
+  user-select: none;
+
+  filter:
+    drop-shadow(
+      0 25px 35px rgba(64, 55, 44, 0.08)
+    );
+}
+
+
+/* =========================================================
+   BOTANICAL LEAVES
+========================================================= */
+
+.owner-leaves {
+  position: absolute;
+
+  z-index: 4;
+
+  width: 210px;
+  height: 330px;
+
+  pointer-events: none;
+}
+
+.owner-leaf-stem {
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  width: 1.5px;
+  height: 310px;
+
+  background: rgba(100, 113, 84, 0.55);
+
+  transform: rotate(-15deg);
+
+  transform-origin: bottom;
+}
+
+.owner-leaf {
+  position: absolute;
+
+  width: 70px;
+  height: 32px;
+
+  border-radius: 100% 0 100% 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(123, 137, 104, 0.78),
+      rgba(93, 108, 77, 0.5)
+    );
+
+  box-shadow:
+    inset 0 0 12px rgba(255, 255, 255, 0.12);
+}
+
+.owner-leaf::after {
+  content: "";
+
+  position: absolute;
+
+  left: 8px;
+  top: 50%;
+
+  width: 75%;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  transform: rotate(-20deg);
+}
+
+
+/* =========================================================
+   RIGHT LEAVES
+========================================================= */
+
+.owner-leaves-right {
+  right: -15px;
+  bottom: 40px;
+
+  transform: rotate(-8deg) scale(1.05);
+}
+
+.owner-leaves-right .leaf-1 {
+  left: 35px;
+  bottom: 38px;
+
+  transform: rotate(22deg);
+}
+
+.owner-leaves-right .leaf-2 {
+  right: 20px;
+  bottom: 90px;
+
+  transform: scaleX(-1) rotate(22deg);
+}
+
+.owner-leaves-right .leaf-3 {
+  left: 25px;
+  bottom: 145px;
+
+  transform: rotate(15deg);
+}
+
+.owner-leaves-right .leaf-4 {
+  right: 5px;
+  bottom: 205px;
+
+  transform: scaleX(-1) rotate(12deg);
+}
+
+.owner-leaves-right .leaf-5 {
+  left: 55px;
+  bottom: 260px;
+
+  width: 60px;
+  height: 28px;
+
+  transform: rotate(8deg);
+}
+
+
+/* =========================================================
+   LEFT LEAVES
+========================================================= */
+
+.owner-leaves-left {
+  left: -40px;
+  bottom: 20px;
+
+  transform: rotate(22deg) scale(0.78);
+
+  opacity: 0.25;
+}
+
+.owner-leaves-left .leaf-1 {
+  left: 35px;
+  bottom: 45px;
+
+  transform: rotate(22deg);
+}
+
+.owner-leaves-left .leaf-2 {
+  right: 20px;
+  bottom: 100px;
+
+  transform: scaleX(-1) rotate(18deg);
+}
+
+.owner-leaves-left .leaf-3 {
+  left: 25px;
+  bottom: 165px;
+
+  transform: rotate(12deg);
+}
+
+.owner-leaves-left .leaf-4 {
+  right: 10px;
+  bottom: 225px;
+
+  transform: scaleX(-1) rotate(10deg);
+}
+
+
+/* =========================================================
+   MOBILE VERSION
+   hidden on desktop
+========================================================= */
+
+.owner-mobile-layout {
+  display: none;
+}
+
+
+/* =========================================================
+   MEDIUM DESKTOP / TABLET
+========================================================= */
+
+@media (max-width: 1150px) {
+
+  .owner-section {
+    padding: 90px 0;
+  }
+
+  .owner-container {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(400px, 0.9fr);
+
+    gap: 35px;
+  }
+
+  .owner-title {
+    font-size: clamp(54px, 5vw, 72px);
+  }
+
+  .owner-features {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .owner-feature {
+    max-width: 500px;
+  }
+
+  .owner-visual {
+    min-height: 650px;
+
+    transform: translateY(-30px);
+  }
+
+  .owner-image-wrapper {
+    width: 620px;
+  }
+
+  .owner-leaves-right {
+    right: -70px;
+
+    transform: rotate(-8deg) scale(0.9);
+  }
+
+  .owner-leaves-left {
+    left: -75px;
+
+    transform: rotate(22deg) scale(0.68);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 820px) {
+
+  .owner-section {
+    padding: 70px 0 75px;
+  }
+
+  /*
+    Wyłączamy desktopową wersję.
+  */
+
+  .owner-content,
+  .owner-desktop-image {
+    display: none;
+  }
+
+  /*
+    Włączamy osobny układ mobilny.
+  */
+
+  .owner-container {
+    display: block;
+  }
+
+  .owner-mobile-layout {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  /*
+    Kolejność:
+    1. O MNIE
+    2. zdjęcie
+    3. nagłówek
+    4. tekst
+  */
+
+  .owner-mobile-eyebrow {
+    order: 1;
+
+    margin-bottom: 28px;
+  }
+
+  .owner-mobile-layout > .owner-visual {
+    order: 2;
+  }
+
+  .owner-mobile-content {
+    order: 3;
+  }
+
+
+  /* =========================
+     MOBILE IMAGE
+  ========================= */
+
+  .owner-visual {
+    width: 100%;
+    min-height: auto;
+
+    margin: 0 0 48px;
+
+    transform: none;
+  }
+
+  .owner-image-wrapper {
+    width: min(100%, 580px);
+    max-width: 100%;
+  }
+
+  .owner-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .owner-soft-shape {
+    width: 125%;
+    height: 115%;
+  }
+
+
+  /* =========================
+     MOBILE LEAVES
+  ========================= */
+
+  .owner-leaves-right {
+    right: -55px;
+    bottom: -35px;
+
+    transform: rotate(-8deg) scale(0.78);
+  }
+
+  .owner-leaves-left {
+    left: -65px;
+    bottom: -45px;
+
+    transform: rotate(22deg) scale(0.62);
+
+    opacity: 0.2;
+  }
+
+
+  /* =========================
+     MOBILE TEXT
+  ========================= */
+
+  .owner-title {
+    max-width: 600px;
+
+    font-size: clamp(50px, 11vw, 68px);
+
+    line-height: 0.98;
+  }
+
+  .owner-title-line {
+    margin-top: 26px;
+  }
+
+  .owner-intro {
+    margin-top: 26px;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+
+  /* =========================
+     MOBILE FEATURES
+  ========================= */
+
+  .owner-features {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+
+    margin-top: 40px;
+  }
+
+  .owner-feature {
+    max-width: none;
+
+    grid-template-columns: 48px minmax(0, 1fr);
+
+    gap: 18px;
+
+    padding: 22px 0;
+
+    border-bottom:
+      1px solid rgba(44, 41, 37, 0.12);
+  }
+
+  .owner-feature:first-child {
+    padding-top: 0;
+  }
+
+  .owner-feature:last-child {
+    border-bottom: none;
+  }
+
+  .owner-feature-copy h3 {
+    font-size: 10px;
+  }
+
+  .owner-feature-copy p {
+    max-width: 500px;
+
+    font-size: 13px;
+  }
+
+  .owner-closing {
+    margin-top: 30px;
+
+    font-size: 13px;
+  }
+
+  .owner-button {
+    margin-top: 28px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .owner-section {
+    padding: 58px 0 65px;
+  }
+
+  .owner-mobile-eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .owner-visual {
+    margin-bottom: 38px;
+  }
+
+  .owner-image-wrapper {
+    width: 108%;
+
+    max-width: none;
+
+    margin-left: -4%;
+  }
+
+  /*
+    Dzięki temu zdjęcie na telefonie
+    jest duże i nie wygląda jak miniaturka.
+  */
+
+  .owner-title {
+    font-size: clamp(46px, 13vw, 58px);
+  }
+
+  .owner-intro {
+    font-size: 14px;
+  }
+
+  .owner-leaves-right {
+    right: -105px;
+    bottom: -85px;
+
+    transform: rotate(-8deg) scale(0.66);
+
+    opacity: 0.72;
+  }
+
+  .owner-leaves-left {
+    left: -110px;
+    bottom: -90px;
+
+    transform: rotate(22deg) scale(0.52);
+
+    opacity: 0.16;
+  }
+
+  .owner-button {
+    width: 100%;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .owner-section {
+    padding-top: 50px;
+  }
+
+  .owner-title {
+    font-size: 44px;
+  }
+
+  .owner-image-wrapper {
+    width: 112%;
+
+    margin-left: -6%;
+  }
+}

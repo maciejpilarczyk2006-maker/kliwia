@@ -67,8 +67,8 @@ export const socialMedia = {
 
 export const navigation = [
   {
-    label: "O salonie",
-    href: "#about",
+    label: "O mnie",
+    href: "#owner",
   },
   {
     label: "Zabiegi",
@@ -88,10 +88,10 @@ export const navigation = [
 export const hero = {
   eyebrow: "SALON KOSMETYCZNY · ZIELONA GÓRA",
 
-  title: "Pielęgnacja, którą poczujesz. Efekty, które zobaczysz.",
+  title: "Kliwia",
 
   description:
-    "Profesjonalne zabiegi kosmetyczne dopasowane do potrzeb Twojej skóry, wykonywane z troską o każdy detal.",
+    "Stworzyłam miejsce, w którym możesz zadbać o siebie, a jednocześnie oderwać się od codziennych obowiązków, odpocząć i w pełni się zrelaksować.",
 
   primaryButton: {
     label: "POZNAJ ZABIEGI",
@@ -102,23 +102,6 @@ export const hero = {
     label: "ZADZWOŃ I UMÓW WIZYTĘ",
     href: "#appointment",
   },
-};
-
-
-// --------------------
-// O SALONIE
-// --------------------
-
-export const about = {
-  eyebrow: "O KLIWII",
-
-  title: "Piękno zaczyna się od dobrej pielęgnacji.",
-
-  description:
-    "Kliwia to miejsce stworzone z myślą o świadomej pielęgnacji, komforcie i naturalnym pięknie. Każdy zabieg dobieramy indywidualnie, zwracając uwagę na potrzeby skóry oraz oczekiwany efekt.",
-
-  secondParagraph:
-    "Łączymy profesjonalne podejście ze spokojną atmosferą, aby każda wizyta była nie tylko zabiegiem, ale również chwilą przeznaczoną wyłącznie dla Ciebie.",
 };
 
 
@@ -319,7 +302,6 @@ export const maps = {
     "https://www.google.com/maps?q=Kazimierza+Lisowskiego+19,+65-072+Zielona+Góra,+Polska&output=embed",
 };
 
-
 // --------------------
 // FOOTER
 // --------------------
@@ -329,4 +311,45 @@ export const footer = {
     "Profesjonalna pielęgnacja i kosmetologia w Zielonej Górze.",
 
   copyright: "© 2026 Kliwia. Wszelkie prawa zastrzeżone.",
+};
+// --------------------
+// O MNIE / WŁAŚCICIELKA
+// --------------------
+
+export const ownerSection = {
+  eyebrow: "O MNIE",
+
+  title: "Piękno to harmonia ciała i duszy.",
+
+  intro:
+    "Nazywam się Sylwia Dziewulak i jestem właścicielką salonu Kliwia. Kosmetyka jest nie tylko moją pracą, ale przede wszystkim prawdziwą pasją. Każdą osobę traktuję indywidualnie, dbając o jej komfort, dobre samopoczucie i piękne efekty zabiegów.",
+
+  features: [
+    {
+      id: 1,
+      title: "Doświadczenie",
+      text:
+        "Gabinet Kosmetyczny Kliwia prowadzę już od 20 lat, stale rozwijając swoje umiejętności i poszerzając wiedzę.",
+    },
+    {
+      id: 2,
+      title: "Indywidualne podejście",
+      text:
+        "Każda osoba jest wyjątkowa, dlatego zabiegi dobieram indywidualnie do potrzeb skóry i oczekiwanego efektu.",
+    },
+    {
+      id: 3,
+      title: "Jakość i bezpieczeństwo",
+      text:
+        "Pracuję na sprawdzonych produktach i urządzeniach, dbając o wysokie standardy higieny i komfort podczas wizyty.",
+    },
+  ],
+
+  closing:
+    "W Kliwii zadbam nie tylko o Twój wygląd, ale również o dobre samopoczucie i chwilę relaksu, której naprawdę potrzebujesz.",
+
+  button: {
+    label: "DOWIEDZ SIĘ WIĘCEJ O ZABIEGACH",
+    href: "#services",
+  },
 };
