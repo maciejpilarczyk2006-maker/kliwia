@@ -1,6 +1,7 @@
 import "./Footer.css";
 
 import { navigation, socialMedia, salon, footer } from "../../data/content";
+import logoKliwia from "../../assets/images/logo/logo-kliwia.jpg";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,9 +11,13 @@ function Footer() {
       <div className="container footer-inner">
         <div className="footer-top">
           <div className="footer-brand">
-            <div className="footer-logo-placeholder">
-              LOGO
-            </div>
+           <a href="#top" className="footer-logo" aria-label="Kliwia - strona główna">
+  <img
+    src={logoKliwia}
+    alt="Kliwia Sylwia Dziewulak"
+    className="footer-logo-image"
+  />
+</a>
 
             <p>
               {footer.description}

@@ -3,6 +3,7 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { FiMenu, FiX } from "react-icons/fi";
 
 import "./Navbar.css";
+import logoKliwia from "../../assets/images/logo/logo-kliwia.jpg";
 import { navigation, socialMedia } from "../../data/content";
 
 function Navbar() {
@@ -15,11 +16,13 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="container navbar-inner">
-        <a href="#top" className="navbar-logo" onClick={closeMenu}>
-          <span className="navbar-logo-placeholder">
-            LOGO
-          </span>
-        </a>
+       <a href="#top" className="nav-logo" aria-label="Kliwia - strona główna">
+  <img
+    src={logoKliwia}
+    alt="Kliwia Sylwia Dziewulak"
+    className="nav-logo-image"
+  />
+</a>
 
         <nav className="navbar-desktop-nav">
           {navigation.map((item) => (

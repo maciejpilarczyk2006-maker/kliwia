@@ -24,8 +24,8 @@
 export const salon = {
   name: "Kliwia",
 
-  phone: "+48 68 324 60 01",
-  phoneHref: "+48683246001",
+  phone: "+48 702 476 293",
+  phoneHref: "+48702476293",
 
   email: "kliwiazg.salon@gmail.com",
 
@@ -40,11 +40,7 @@ export const salon = {
       hours: "9:00 – 18:00",
     },
     {
-      days: "Sobota",
-      hours: "9:00 – 14:00",
-    },
-    {
-      days: "Niedziela",
+      days: "Sobota i Niedziela",
       hours: "Nieczynne",
     },
   ],
@@ -88,7 +84,7 @@ export const navigation = [
 export const hero = {
   eyebrow: "SALON KOSMETYCZNY · ZIELONA GÓRA",
 
-  title: "Kliwia",
+  title: "Znajdź chwilę dla siebie i swojej skóry.",
 
   description:
     "Stworzyłam miejsce, w którym możesz zadbać o siebie, a jednocześnie oderwać się od codziennych obowiązków, odpocząć i w pełni się zrelaksować.",

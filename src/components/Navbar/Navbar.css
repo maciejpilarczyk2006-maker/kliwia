@@ -27,24 +27,28 @@
 
 /* LOGO */
 
-.navbar-logo {
-  justify-self: start;
-}
-
-.navbar-logo-placeholder {
-  display: inline-flex;
+.nav-logo {
+  display: flex;
   align-items: center;
   justify-content: center;
 
-  min-width: 120px;
-  min-height: 46px;
+  width: 145px;
+  height: 72px;
 
-  border: 1px dashed rgba(44, 41, 37, 0.35);
+  flex-shrink: 0;
 
-  font-size: 10px;
-  letter-spacing: 0.18em;
+  text-decoration: none;
 
-  color: var(--color-text-soft);
+  overflow: hidden;
+}
+
+.nav-logo-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
 }
 
 /* DESKTOP NAV */
@@ -286,6 +290,17 @@
   .mobile-appointment-button {
     width: 100%;
   }
+  .nav-logo {
+  width: 110px;
+  height: 58px;
+}
+
+.nav-logo-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
 }
 
 @media (max-width: 480px) {
