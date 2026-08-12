@@ -1,0 +1,147 @@
+.certificates-section {
+  background: #f4efe8;
+}
+
+.certificates-heading {
+  max-width: 760px;
+  margin-bottom: 58px;
+}
+
+.certificates-section .section-eyebrow {
+  color: var(--color-green);
+  font-weight: 500;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 46px;
+  row-gap: 26px;
+}
+
+.certificate-card {
+  display: grid;
+
+  grid-template-columns: 145px minmax(0, 1fr);
+
+  gap: 24px;
+
+  align-items: center;
+
+  padding: 20px 0;
+
+  border-top: 1px solid rgba(44, 41, 37, 0.16);
+}
+
+.certificate-image {
+  width: 145px;
+  height: 105px;
+
+  overflow: hidden;
+
+  background: #e7e1d8;
+}
+
+.certificate-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.certificate-content {
+  min-width: 0;
+}
+
+.certificate-top {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.certificate-year {
+  font-size: 9px;
+  font-weight: 500;
+
+  letter-spacing: 0.14em;
+
+  color: var(--color-green);
+}
+
+.certificate-content h3 {
+  margin: 0;
+
+  font-family: var(--font-serif);
+
+  font-size: 26px;
+  font-weight: 400;
+
+  line-height: 1.05;
+
+  color: var(--color-text);
+}
+
+.certificate-content p {
+  max-width: 420px;
+
+  margin-top: 11px;
+
+  font-size: 12px;
+  line-height: 1.65;
+
+  color: var(--color-text-soft);
+}
+
+/* TABLET */
+
+@media (max-width: 980px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-card {
+    grid-template-columns: 135px minmax(0, 1fr);
+  }
+
+  .certificate-image {
+    width: 135px;
+    height: 98px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 620px) {
+  .certificates-heading {
+    margin-bottom: 40px;
+  }
+
+  .certificates-grid {
+    row-gap: 8px;
+  }
+
+  .certificate-card {
+    grid-template-columns: 105px minmax(0, 1fr);
+
+    gap: 18px;
+
+    padding: 18px 0;
+  }
+
+  .certificate-image {
+    width: 105px;
+    height: 82px;
+  }
+
+  .certificate-content h3 {
+    font-size: 22px;
+  }
+
+  .certificate-content p {
+    margin-top: 8px;
+
+    font-size: 11px;
+    line-height: 1.55;
+  }
+}

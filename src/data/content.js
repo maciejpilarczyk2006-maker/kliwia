@@ -20,6 +20,90 @@
 // --------------------
 // SALON
 // --------------------
+import certificate1 from "../assets/images/certificates/certificate-1.jpg";
+import certificate2 from "../assets/images/certificates/certificate-2.jpg";
+import certificate3 from "../assets/images/certificates/certificate-3.jpg";
+import certificate4 from "../assets/images/certificates/certificate-4.jpg";
+import certificate5 from "../assets/images/certificates/certificate-5.jpg";
+import certificate6 from "../assets/images/certificates/certificate-6.jpg";
+import certificate7 from "../assets/images/certificates/certificate-7.jpg";
+import certificate8 from "../assets/images/certificates/certificate-8.jpg";
+
+export const certificatesSection = {
+  eyebrow: "CERTYFIKATY",
+
+  title: "Wiedza, która stoi za każdym zabiegiem.",
+
+  description:
+    "Regularnie rozwijam swoje umiejętności i poszerzam wiedzę, aby pracować w oparciu o aktualne standardy, sprawdzone techniki i bezpieczne rozwiązania.",
+
+  certificates: [
+    {
+      id: 1,
+      title: "Biomedica",
+      description:
+        "Makijaż permanentny ust",
+      year: "2025",
+      image: certificate1,
+    },
+    {
+      id: 2,
+      title: "Biomedica Beauty Academy",
+      description:
+        "Mikropigmentacja brwi metodą 3D z użyciem kamuflaży",
+      year: "2025",
+      image: certificate2,
+    },
+    {
+      id: 3,
+      title: "Biomedica",
+      description:
+        "Szkolenie z mikropigmentacji brwi Ombre-Basic",
+      year: "2024",
+      image: certificate3,
+    },
+    {
+      id: 4,
+      title: "Biomedica Beauty Academy",
+      description:
+        "Pigmentacja kreski dekoracyjnej",
+      year: "2020",
+      image: certificate4,
+    },
+    {
+      id: 5,
+      title: "Hydroderm",
+      description:
+        "Ukończone szkolenie umożliwiające pracę z urządzeniem Hydroderm Original",
+      year: "2022",
+      image: certificate5,
+    },
+    {
+      id: 6,
+      title: "Este Belle - Akademia Terapii Manualnych",
+      description:
+        "Ukończenie kursu z zakresu: Masaż Kobido",
+      year: "2026",
+      image: certificate6,
+    },
+    {
+      id: 7,
+      title: "Biomedica",
+      description:
+        "Szkolenie z mikropigmentacji brwi metodą włosa",
+      year: "2022",
+      image: certificate7,
+    },
+    {
+      id: 8,
+      title: "Nazwa certyfikatu 8",
+      description:
+        "Krótki opis szkolenia lub zakresu zdobytych umiejętności.",
+      year: "2022",
+      image: certificate8,
+    },
+  ],
+};
 
 export const salon = {
   name: "Kliwia",
