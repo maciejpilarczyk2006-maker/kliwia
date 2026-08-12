@@ -29,6 +29,8 @@ import certificate6 from "../assets/images/certificates/certificate-6.jpg";
 import certificate7 from "../assets/images/certificates/certificate-7.jpg";
 import certificate8 from "../assets/images/certificates/certificate-8.jpg";
 
+import oczyszczaniewodorowe from "../assets/images/services/oczyszczanie-wodorowe.jpg";
+
 export const certificatesSection = {
   eyebrow: "CERTYFIKATY",
 
@@ -43,7 +45,7 @@ export const certificatesSection = {
       title: "Biomedica",
       description:
         "Makijaż permanentny ust",
-      year: "2025",
+      year: "2018",
       image: certificate1,
     },
     {
@@ -91,14 +93,14 @@ export const certificatesSection = {
       title: "Biomedica",
       description:
         "Szkolenie z mikropigmentacji brwi metodą włosa",
-      year: "2022",
+      year: "2028",
       image: certificate7,
     },
     {
       id: 8,
-      title: "Nazwa certyfikatu 8",
+      title: "Victoria Vynn",
       description:
-        "Krótki opis szkolenia lub zakresu zdobytych umiejętności.",
+        "Certyfikat potwierdzający udział w Masterclass Victoria Vynn",
       year: "2022",
       image: certificate8,
     },
@@ -206,42 +208,47 @@ export const servicesSection = {
 export const serviceCategories = [
   {
     id: "face",
-
     number: "01",
-
     name: "Pielęgnacja twarzy",
-
     description:
       "Zabiegi stworzone z myślą o zdrowym wyglądzie, regeneracji i odpowiednim nawilżeniu skóry.",
 
     treatments: [
       {
         id: "face-1",
-
-        name: "Zabieg intensywnie nawilżający",
-
+        name: "Oczyszczanie wodorowe twarzy",
         description:
-          "Kompleksowa pielęgnacja przeznaczona dla skóry suchej i odwodnionej. Zabieg pomaga przywrócić komfort, miękkość oraz zdrowy wygląd skóry.",
-
+          "Oczyszczanie wodorowe polega na wprowadzaniu w głąb skóry mikroskopijnych cząsteczek aktywnego wodoru za pomocą strumienia wody pod dużym ciśnieniem. Wodór neutralizuje wolne rodniki odpowiedzialne za starzenie, a sam zabieg łączy złuszczanie martwego naskórka. Głębokie doczyszczenie.",
         duration: "60 min",
-
         price: "250 zł",
-
-        image: null,
+        image: oczyszczaniewodorowe,
       },
 
       {
         id: "face-2",
-
         name: "Oczyszczanie twarzy",
-
         description:
-          "Zabieg wspierający dokładne oczyszczenie skóry oraz poprawę jej wyglądu i kondycji.",
-
+          "Zabieg wspierający dokładne oczyszczenie skóry i poprawę jej kondycji.",
         duration: "75 min",
-
         price: "280 zł",
+        image: null,
+      },
 
+      {
+        id: "face-3",
+        name: "Nazwa zabiegu",
+        description: "Opis zabiegu.",
+        duration: "60 min",
+        price: "000 zł",
+        image: null,
+      },
+
+      {
+        id: "face-4",
+        name: "Nazwa zabiegu",
+        description: "Opis zabiegu.",
+        duration: "60 min",
+        price: "000 zł",
         image: null,
       },
     ],
@@ -249,42 +256,74 @@ export const serviceCategories = [
 
   {
     id: "specialist",
-
     number: "02",
-
     name: "Zabiegi specjalistyczne",
-
     description:
-      "Profesjonalne zabiegi dobierane indywidualnie do potrzeb i aktualnej kondycji skóry.",
+      "Zaawansowane zabiegi dobierane indywidualnie do potrzeb i aktualnej kondycji skóry.",
 
     treatments: [
       {
         id: "specialist-1",
-
         name: "Zabieg regenerujący",
-
         description:
-          "Intensywna pielęgnacja wspierająca regenerację skóry i poprawę jej ogólnej kondycji.",
-
+          "Intensywna pielęgnacja wspierająca regenerację i poprawę kondycji skóry.",
         duration: "60 min",
-
         price: "300 zł",
-
         image: null,
       },
 
       {
         id: "specialist-2",
-
-        name: "Zabieg odżywczy",
-
-        description:
-          "Pielęgnacja dla skóry wymagającej odżywienia, wygładzenia i odzyskania naturalnego blasku.",
-
+        name: "Nazwa zabiegu",
+        description: "Opis zabiegu.",
         duration: "60 min",
+        price: "000 zł",
+        image: null,
+      },
 
-        price: "270 zł",
+      {
+        id: "specialist-3",
+        name: "Nazwa zabiegu",
+        description: "Opis zabiegu.",
+        duration: "60 min",
+        price: "000 zł",
+        image: null,
+      },
+    ],
+  },
 
+  {
+    id: "body",
+    number: "03",
+    name: "Pielęgnacja ciała",
+    description:
+      "Zabiegi poprawiające kondycję skóry, wspierające regenerację i modelowanie sylwetki.",
+
+    treatments: [
+      {
+        id: "body-1",
+        name: "Nazwa zabiegu",
+        description: "Opis zabiegu.",
+        duration: "60 min",
+        price: "000 zł",
+        image: null,
+      },
+
+      {
+        id: "body-2",
+        name: "Nazwa zabiegu",
+        description: "Opis zabiegu.",
+        duration: "60 min",
+        price: "000 zł",
+        image: null,
+      },
+
+      {
+        id: "body-3",
+        name: "Nazwa zabiegu",
+        description: "Opis zabiegu.",
+        duration: "60 min",
+        price: "000 zł",
         image: null,
       },
     ],
@@ -292,42 +331,94 @@ export const serviceCategories = [
 
   {
     id: "brows",
-
-    number: "03",
-
+    number: "04",
     name: "Brwi i rzęsy",
-
     description:
-      "Subtelne podkreślenie naturalnej oprawy oka dopasowane do urody i oczekiwanego efektu.",
+      "Zabiegi podkreślające naturalną oprawę oka i dopasowane do rysów twarzy.",
 
     treatments: [
       {
         id: "brows-1",
-
         name: "Laminacja brwi",
-
         description:
-          "Zabieg pozwalający uporządkować, wymodelować i optycznie zagęścić naturalne brwi.",
-
+          "Zabieg pozwalający uporządkować, wymodelować i optycznie zagęścić brwi.",
         duration: "60 min",
-
         price: "150 zł",
-
         image: null,
       },
 
       {
         id: "brows-2",
-
         name: "Stylizacja brwi",
-
         description:
           "Precyzyjne nadanie kształtu brwiom dopasowanego do rysów twarzy.",
-
         duration: "30 min",
-
         price: "80 zł",
+        image: null,
+      },
 
+      {
+        id: "brows-3",
+        name: "Nazwa zabiegu",
+        description: "Opis zabiegu.",
+        duration: "45 min",
+        price: "000 zł",
+        image: null,
+      },
+    ],
+  },
+
+  {
+    id: "hands",
+    number: "05",
+    name: "Dłonie i paznokcie",
+    description:
+      "Pielęgnacja dłoni i paznokci z naciskiem na estetykę, komfort i trwały efekt.",
+
+    treatments: [
+      {
+        id: "hands-1",
+        name: "Nazwa zabiegu",
+        description: "Opis zabiegu.",
+        duration: "60 min",
+        price: "000 zł",
+        image: null,
+      },
+
+      {
+        id: "hands-2",
+        name: "Nazwa zabiegu",
+        description: "Opis zabiegu.",
+        duration: "60 min",
+        price: "000 zł",
+        image: null,
+      },
+    ],
+  },
+
+  {
+    id: "relax",
+    number: "06",
+    name: "Relaks i pielęgnacja",
+    description:
+      "Zabiegi stworzone z myślą o odprężeniu, regeneracji i chwili tylko dla siebie.",
+
+    treatments: [
+      {
+        id: "relax-1",
+        name: "Nazwa zabiegu",
+        description: "Opis zabiegu.",
+        duration: "60 min",
+        price: "000 zł",
+        image: null,
+      },
+
+      {
+        id: "relax-2",
+        name: "Nazwa zabiegu",
+        description: "Opis zabiegu.",
+        duration: "60 min",
+        price: "000 zł",
         image: null,
       },
     ],
