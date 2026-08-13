@@ -226,9 +226,9 @@ export const serviceCategories = [
 
       {
         id: "face-2",
-        name: "Oczyszczanie twarzy",
+        name: "Peeling migdałowy Purles",
         description:
-          "Zabieg wspierający dokładne oczyszczenie skóry i poprawę jej kondycji.",
+          "(Oparty zazwyczaj na kwasie migdałowym o stężeniu 40%), delikatny, ale skuteczny peeling chemiczny. Działa antybakteryjnie, reguluje sebum, rozjaśnia przebarwienia i stymuluje odnowę skóry bez silnego podrażnienia, co pozwala na wykonywanie go przez cały rok. Wskazania i Działanie: Typy cery: tłusta, mieszana, z niedoskonałościami, a także wrażliwa i z naczyńkami. Problemy: trądzik pospolity, zaskórniki, nierówny koloryt, pierwsze oznaki starzenia. Efekty: wygładzenie, oczyszczenie porów, rozjaśnienie plam pigmentacyjnych oraz poprawa jędrności skóry",
         duration: "75 min",
         price: "280 zł",
         image: null,
@@ -236,8 +236,8 @@ export const serviceCategories = [
 
       {
         id: "face-3",
-        name: "Nazwa zabiegu",
-        description: "Opis zabiegu.",
+        name: "Zabieg z kwasem glikolowym",
+        description: "G-peel 40%. Głęboko złuszczający i regenerujący kwas glikolowy, który ma zdolność docierania aż do warstwy brodawkowatej skóry właściwej. Powoduje zmianę struktury naskórka, stymulując namnażanie nowych komórek i włókien kolagenowych, a także aktywuje procesy naprawy uszkodzeń powstałych z powodu promieniowania UV. Zmniejsza przebarwienia, poprawia kondycję i zwartość skóry. Ponadto minimalizuje drobne blizny i ślady po stanach zapalnych.",
         duration: "60 min",
         price: "000 zł",
         image: null,
@@ -264,9 +264,9 @@ export const serviceCategories = [
     treatments: [
       {
         id: "specialist-1",
-        name: "Zabieg regenerujący",
+        name: "Zabieg Sushi Ceremony Purles",
         description:
-          "Intensywna pielęgnacja wspierająca regenerację i poprawę kondycji skóry.",
+          "Jego głównym celem jest głębokie odżywienie skóry dojrzałej, redukcja zmarszczek oraz rozjaśnienie przebarwień i wyrównanie kolorytu cery. Główne zastosowanie i działanie zabiegu to: Redukcja zmarszczek: Wygładza drobne linie i poprawia napięcie skóry. Walka z przebarwieniami: Rozjaśnia plamy pigmentacyjne i wyrównuje koloryt. Silne antyoksydacje: Chroni komórki przed starzeniem i poprawia mikrokrążenie. Głębokie rozświetlenie: Przywraca zmęczonej cerze zdrowy, promienny wygląd..",
         duration: "60 min",
         price: "300 zł",
         image: null,
@@ -274,8 +274,8 @@ export const serviceCategories = [
 
       {
         id: "specialist-2",
-        name: "Nazwa zabiegu",
-        description: "Opis zabiegu.",
+        name: "Zabieg Microbiome Therapy",
+        description: "Zabieg dedykowany cerze suchej, wrażliwej, nadreaktywnej. Działanie i efekty: odbudowa mikrobiomu: przywraca prawidłową florę bakteryjną naskórka, wzmocnienie barier: Uszczelnia i reperuje zniszczoną barierę hydrolipidową, głębokie nawilżenie: niweluje uczucie ściągnięcia, suchości i łuszczenia, kojenie podrażnień: błyskawicznie łagodzi zaczerwienienia i stany zapalne, dając uczucie komfortu.",
         duration: "60 min",
         price: "000 zł",
         image: null,
@@ -295,15 +295,15 @@ export const serviceCategories = [
   {
     id: "body",
     number: "03",
-    name: "Pielęgnacja ciała",
+    name: "Brwi i rzęsy",
     description:
-      "Zabiegi poprawiające kondycję skóry, wspierające regenerację i modelowanie sylwetki.",
+      "Zabiegi podkreślające naturalną oprawę oka i dopasowane do rysów twarzy.",
 
     treatments: [
       {
         id: "body-1",
-        name: "Nazwa zabiegu",
-        description: "Opis zabiegu.",
+        name: "Lifting rzęs",
+        description: "Zabieg polegający na trwałym uniesieniu i podkręceniu naturalnych rzęs przy pomocy specjalnych wałeczków silikonowych oraz preparatów zmieniających kształt włosa.",
         duration: "60 min",
         price: "000 zł",
         image: null,
@@ -332,7 +332,7 @@ export const serviceCategories = [
   {
     id: "brows",
     number: "04",
-    name: "Brwi i rzęsy",
+    name: "Usta",
     description:
       "Zabiegi podkreślające naturalną oprawę oka i dopasowane do rysów twarzy.",
 
