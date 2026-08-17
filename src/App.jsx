@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import AboutOwner from "./components/AboutOwner/AboutOwner";
 import Certificates from "./components/Certificates/Certificates";
 import Services from "./components/Services/Services";
+import SafetyQuality from "./components/SafetyQuality/SafetyQuality";
 import Appointment from "./components/Appointment/Appointment";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
@@ -19,6 +20,7 @@ function App() {
         <AboutOwner />
         <Certificates />
         <Services />
+        <SafetyQuality />
         <Appointment />
         <Contact />
       </main>

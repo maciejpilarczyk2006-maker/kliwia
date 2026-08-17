@@ -170,16 +170,34 @@
 
 .treatment-image {
   min-width: 0;
+  background: #fff;
+}
+
+.treatment-image {
+  min-width: 0;
+  overflow: hidden;
+  background: var(--color-bg-muted);
+  aspect-ratio: 4 / 3;
 }
 
 .treatment-image img,
 .treatment-image-placeholder {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
+  display: block;
 }
 
 .treatment-image img {
   object-fit: cover;
+  object-position: center;
+}
+
+.treatment-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-bg-muted);
 }
 
 .treatment-image-placeholder {
@@ -442,4 +460,38 @@
       var(--color-green-pale),
       var(--color-bg-muted)
     );
+}/* ========================================
+   DŁONIE I PAZNOKCIE — BEZ ZDJĘĆ
+======================================== */
+
+.treatment-card--no-image {
+  display: block;
+}
+
+.treatment-card--no-image .treatment-content {
+  width: 100%;
+  max-width: 900px;
+}
+
+.treatment-card--no-image .treatment-top h4 {
+  max-width: 760px;
+}
+
+.treatment-card--no-image .treatment-top p {
+  max-width: 760px;
+}
+
+@media (max-width: 700px) {
+  .treatment-card--no-image .treatment-content {
+    width: 100%;
+    max-width: none;
+  }
+}.treatment-image--contain {
+  background: #ffffff;
+}
+
+.treatment-image--contain img {
+  object-fit: contain;
+  object-position: center;
+  padding: 12px;
 }

@@ -29,7 +29,13 @@ import certificate6 from "../assets/images/certificates/certificate-6.jpg";
 import certificate7 from "../assets/images/certificates/certificate-7.jpg";
 import certificate8 from "../assets/images/certificates/certificate-8.jpg";
 
-import oczyszczaniewodorowe from "../assets/images/services/oczyszczanie-wodorowe.jpg";
+import oczyszczaniewodorowe from "../assets/images/services/oczyszczanie-wodorowe-1.jpg";
+import apeel from "../assets/images/services/a-peel.jpg";
+import mpeel from "../assets/images/services/m-peel.jpg";
+import sushiCeremony from "../assets/images/services/sushi-ceremony.jpg";
+import gpeel from "../assets/images/services/g-peel.jpg";
+import kosmetyki from "../assets/images/about/purles.png";
+import dezynfekcja from "../assets/images/about/dezynfekcja-1.jpg";
 
 export const certificatesSection = {
   eyebrow: "CERTYFIKATY",
@@ -231,7 +237,8 @@ export const serviceCategories = [
           "(Oparty zazwyczaj na kwasie migdałowym o stężeniu 40%), delikatny, ale skuteczny peeling chemiczny. Działa antybakteryjnie, reguluje sebum, rozjaśnia przebarwienia i stymuluje odnowę skóry bez silnego podrażnienia, co pozwala na wykonywanie go przez cały rok. Wskazania i Działanie: Typy cery: tłusta, mieszana, z niedoskonałościami, a także wrażliwa i z naczyńkami. Problemy: trądzik pospolity, zaskórniki, nierówny koloryt, pierwsze oznaki starzenia. Efekty: wygładzenie, oczyszczenie porów, rozjaśnienie plam pigmentacyjnych oraz poprawa jędrności skóry",
         duration: "75 min",
         price: "280 zł",
-        image: null,
+        image: mpeel,
+        imageFit: "contain"
       },
 
       {
@@ -240,13 +247,35 @@ export const serviceCategories = [
         description: "G-peel 40%. Głęboko złuszczający i regenerujący kwas glikolowy, który ma zdolność docierania aż do warstwy brodawkowatej skóry właściwej. Powoduje zmianę struktury naskórka, stymulując namnażanie nowych komórek i włókien kolagenowych, a także aktywuje procesy naprawy uszkodzeń powstałych z powodu promieniowania UV. Zmniejsza przebarwienia, poprawia kondycję i zwartość skóry. Ponadto minimalizuje drobne blizny i ślady po stanach zapalnych.",
         duration: "60 min",
         price: "000 zł",
-        image: null,
+        image: gpeel,
+        imageFit: "contain"
       },
 
       {
         id: "face-4",
-        name: "Nazwa zabiegu",
-        description: "Opis zabiegu.",
+        name: "Zabieg sushi ceremony Purles",
+        description: "Jego głównym celem jest głębokie odżywienie skóry dojrzałej, redukcja zmarszczek oraz rozjaśnienie przebarwień i wyrównanie kolorytu cery. Główne zastosowanie i działanie zabiegu to: Redukcja zmarszczek: Wygładza drobne linie i poprawia napięcie skóry. Walka z przebarwieniami: Rozjaśnia plamy pigmentacyjne i wyrównuje koloryt. Silne antyoksydacje: Chroni komórki przed starzeniem i poprawia mikrokrążenie. Głębokie rozświetlenie: Przywraca zmęczonej cerze zdrowy, promienny wygląd.",
+        duration: "60 min",
+        price: "000 zł",
+        image: sushiCeremony,
+        imageFit: "contain"
+      },
+
+      {
+      id: "face-5",
+      name: "A-Peel",
+      description:
+        "Jest to tzw. peeling bankietowy, idealny dla skóry odwodnionej, zmęczonej i wrażliwej. Działa bardzo łagodnie, głęboko nawilża, poprawia elastyczność naskórka i rozświetla cerę.",
+      duration: "45 min",
+      price: "180 zł",
+      image: apeel,
+      imageFit: "contain"
+    },
+
+    {
+        id: "face-6",
+        name: "Zabieg Microbiome Therapy",
+        description: "Zabieg dedykowany cerze suchej, wrażliwej, nadreaktywnej. Działanie i efekty: odbudowa mikrobiomu: przywraca prawidłową florę bakteryjną naskórka, wzmocnienie barier: Uszczelnia i reperuje zniszczoną barierę hydrolipidową, głębokie nawilżenie: niweluje uczucie ściągnięcia, suchości i łuszczenia, kojenie podrażnień: błyskawicznie łagodzi zaczerwienienia i stany zapalne, dając uczucie komfortu.",
         duration: "60 min",
         price: "000 zł",
         image: null,
@@ -266,7 +295,7 @@ export const serviceCategories = [
         id: "specialist-1",
         name: "Zabieg Sushi Ceremony Purles",
         description:
-          "Jego głównym celem jest głębokie odżywienie skóry dojrzałej, redukcja zmarszczek oraz rozjaśnienie przebarwień i wyrównanie kolorytu cery. Główne zastosowanie i działanie zabiegu to: Redukcja zmarszczek: Wygładza drobne linie i poprawia napięcie skóry. Walka z przebarwieniami: Rozjaśnia plamy pigmentacyjne i wyrównuje koloryt. Silne antyoksydacje: Chroni komórki przed starzeniem i poprawia mikrokrążenie. Głębokie rozświetlenie: Przywraca zmęczonej cerze zdrowy, promienny wygląd..",
+          "Opis zabiegu.",
         duration: "60 min",
         price: "300 zł",
         image: null,
@@ -283,8 +312,8 @@ export const serviceCategories = [
 
       {
         id: "specialist-3",
-        name: "Nazwa zabiegu",
-        description: "Opis zabiegu.",
+        name: "Masaż Kobido",
+        description: "Kobido – naturalny lifting twarzy. Ten wyjątkowy japoński masaż intensywnie pobudza skórę, poprawia jej jędrność i owal twarzy, wygładza drobne zmarszczki oraz pomaga zmniejszyć napięcia mięśniowe. To połączenie skutecznej pielęgnacji z głębokim relaksem.",
         duration: "60 min",
         price: "000 zł",
         image: null,
@@ -369,11 +398,11 @@ export const serviceCategories = [
   },
 
   {
-    id: "hands",
+    id: "dlonie-i-paznokcie",
     number: "05",
-    name: "Dłonie i paznokcie",
+    name: "Stylizacja paznokci",
     description:
-      "Pielęgnacja dłoni i paznokci z naciskiem na estetykę, komfort i trwały efekt.",
+      "Pielęgnacja i stylizacja paznokci z naciskiem na estetykę, komfort i trwały efekt.",
 
     treatments: [
       {
@@ -382,7 +411,6 @@ export const serviceCategories = [
         description: "Opis zabiegu.",
         duration: "60 min",
         price: "000 zł",
-        image: null,
       },
 
       {
@@ -523,4 +551,52 @@ export const ownerSection = {
     label: "DOWIEDZ SIĘ WIĘCEJ O ZABIEGACH",
     href: "#services",
   },
+};
+export const safetyQuality = {
+  eyebrow: "BEZPIECZEŃSTWO I JAKOŚĆ",
+
+  title:
+    "Dbałość o każdy szczegół — od higieny po pielęgnację.",
+
+  description:
+    "Wszystko o higienie i jakości w salonie Kliwia.",
+
+  items: [
+    {
+      id: "safety",
+      number: "01",
+      label: "HIGIENA I BEZPIECZEŃSTWO",
+      title: "Bezpieczeństwo przede wszystkim.",
+      description:
+        "W salonie kosmetycznym Kliwia bezpieczeństwo naszych Klientek jest najważniejsze.",
+      points: [
+        "Wszystkie narzędzia są starannie dezynfekowane i sterylizowane zgodnie z obowiązującymi procedurami, a stanowiska pracy regularnie odkażane.",
+        "Podczas zabiegów używamy jednorazowych pilniczków, aby zapewnić najwyższy poziom higieny i bezpieczeństwa.",
+        "U nas możesz czuć się pięknie, komfortowo i bezpiecznie!",
+      ],
+      image: dezynfekcja,
+      imageAlt: "Higiena i bezpieczeństwo w salonie Kliwia",
+      placeholder: "ZDJĘCIE / HIGIENA",
+    },
+
+    {
+      id: "cosmetics",
+      number: "02",
+      label: "KOSMETYKI",
+      title: "Kosmetyki dobrane z myślą o efektach.",
+      description:
+        "Purles to francuska marka profesjonalnych dermokosmetyków, która łączy innowacyjną biotechnologię z naturalnymi składnikami roślinnymi.",
+      points: [
+        "Formuły kosmetyków są projektowane jako bezpieczna alternatywa dla zabiegów medycyny estetycznej, łącząc skuteczność z pielęgnacją.",
+        "Receptury przed trafieniem do sprzedaży są weryfikowane pod kątem skuteczności w profesjonalnych gabinetach kosmetologii.",
+      ],
+      image: kosmetyki,
+      imageFit: "contain",
+      imageAlt: "Kosmetyki używane w salonie Kliwia",
+      placeholder: "ZDJĘCIE / KOSMETYKI",
+    },
+  ],
+
+  bottomText:
+    "Profesjonalna pielęgnacja zaczyna się od jakości, bezpieczeństwa i świadomego wyboru produktów.",
 };

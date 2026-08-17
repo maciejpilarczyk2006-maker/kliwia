@@ -4,7 +4,7 @@ import "./Services.css";
 import {
   servicesSection,
   serviceCategories,
-} from "../../data/content";
+} from "../../data/content.js";
 
 function Services() {
   const [openCategory, setOpenCategory] = useState(null);
@@ -34,6 +34,9 @@ function Services() {
           {serviceCategories.map((category) => {
             const isOpen = openCategory === category.id;
 
+            const isNailsCategory =
+              category.id === "dlonie-i-paznokcie";
+
             return (
               <article
                 className={`service-category ${
@@ -55,7 +58,9 @@ function Services() {
                   <div className="service-category-heading">
                     <h3>{category.name}</h3>
 
-                    <p>{category.description}</p>
+                    {category.description && (
+                      <p>{category.description}</p>
+                    )}
                   </div>
 
                   <span
@@ -75,52 +80,74 @@ function Services() {
                     <div className="treatments-list">
                       {category.treatments.map((treatment) => (
                         <article
-                          className="treatment-card"
+                          className={`treatment-card ${
+                            isNailsCategory
+                              ? "treatment-card--no-image"
+                              : ""
+                          }`}
                           key={treatment.id}
                         >
-                          <div className="treatment-image">
-                            {treatment.image ? (
-                              <img
-                                src={treatment.image}
-                                alt={treatment.name}
-                              />
-                            ) : (
-                              <div className="treatment-image-placeholder">
-                                <span>ZDJĘCIE ZABIEGU</span>
-                              </div>
-                            )}
-                          </div>
+                          {!isNailsCategory && (
+<div
+  className={`treatment-image ${
+    treatment.imageFit === "contain"
+      ? "treatment-image--contain"
+      : ""
+  }`}
+>                              {treatment.image ? (
+                                <img
+                                  src={treatment.image}
+                                  alt={treatment.name}
+                                />
+                              ) : (
+                                <div className="treatment-image-placeholder">
+                                  <span>
+                                    ZDJĘCIE ZABIEGU
+                                  </span>
+                                </div>
+                              )}
+                            </div>
+                          )}
 
                           <div className="treatment-content">
                             <div className="treatment-top">
                               <h4>{treatment.name}</h4>
 
-                              <p>
-                                {treatment.description}
-                              </p>
+                              {treatment.description && (
+                                <p>
+                                  {treatment.description}
+                                </p>
+                              )}
                             </div>
 
-                            <div className="treatment-meta">
-                              <div>
-                                <span className="treatment-meta-label">
-                                  CZAS
-                                </span>
+                            {(treatment.duration ||
+                              treatment.price) && (
+                              <div className="treatment-meta">
+                                {treatment.duration && (
+                                  <div>
+                                    <span className="treatment-meta-label">
+                                      CZAS
+                                    </span>
 
-                                <strong>
-                                  {treatment.duration}
-                                </strong>
+                                    <strong>
+                                      {treatment.duration}
+                                    </strong>
+                                  </div>
+                                )}
+
+                                {treatment.price && (
+                                  <div>
+                                    <span className="treatment-meta-label">
+                                      CENA
+                                    </span>
+
+                                    <strong>
+                                      {treatment.price}
+                                    </strong>
+                                  </div>
+                                )}
                               </div>
-
-                              <div>
-                                <span className="treatment-meta-label">
-                                  CENA
-                                </span>
-
-                                <strong>
-                                  {treatment.price}
-                                </strong>
-                              </div>
-                            </div>
+                            )}
                           </div>
                         </article>
                       ))}
