@@ -29,13 +29,16 @@ import certificate6 from "../assets/images/certificates/certificate-6.jpg";
 import certificate7 from "../assets/images/certificates/certificate-7.jpg";
 import certificate8 from "../assets/images/certificates/certificate-8.jpg";
 
-import oczyszczaniewodorowe from "../assets/images/services/oczyszczanie-wodorowe-1.jpg";
+import oczyszczaniewodorowe1 from "../assets/images/services/oczyszczanie-wodorowe-1.jpg";
+import oczyszczaniewodorowe from "../assets/images/services/oczyszczanie-wodorowe.jpg";
 import apeel from "../assets/images/services/a-peel.jpg";
 import mpeel from "../assets/images/services/m-peel.jpg";
 import sushiCeremony from "../assets/images/services/sushi-ceremony.jpg";
 import gpeel from "../assets/images/services/g-peel.jpg";
 import kosmetyki from "../assets/images/about/purles.png";
 import dezynfekcja from "../assets/images/about/dezynfekcja-1.jpg";
+import lifting from "../assets/images/services/lifting.jpg";
+import fpeel from "../assets/images/services/f-peel.jpg";
 
 export const certificatesSection = {
   eyebrow: "CERTYFIKATY",
@@ -222,16 +225,26 @@ export const serviceCategories = [
     treatments: [
       {
         id: "face-1",
-        name: "Oczyszczanie wodorowe twarzy",
+        name: "Oczyszczanie manualne twarzy",
         description:
-          "Oczyszczanie wodorowe polega na wprowadzaniu w głąb skóry mikroskopijnych cząsteczek aktywnego wodoru za pomocą strumienia wody pod dużym ciśnieniem. Wodór neutralizuje wolne rodniki odpowiedzialne za starzenie, a sam zabieg łączy złuszczanie martwego naskórka. Głębokie doczyszczenie.",
+          "Zabieg polegający na mechanicznym, ręcznym usuwaniu zaskórników, grudek i zanieczyszczeń.",
         duration: "60 min",
-        price: "250 zł",
-        image: oczyszczaniewodorowe,
+        price: "160 zł",
+        image: oczyszczaniewodorowe1,
       },
 
       {
         id: "face-2",
+        name: "Oczyszczanie wodorowe twarzy",
+        description:
+          "Oczyszczanie wodorowe polega na wprowadzaniu w głąb skóry mikroskopijnych cząsteczek aktywnego wodoru za pomocą strumienia wody pod dużym ciśnieniem. Wodór neutralizuje wolne rodniki odpowiedzialne za starzenie, a sam zabieg łączy złuszczanie martwego naskórka. Głębokie doczyszczenie.",
+        duration: "60 min",
+        price: "180 zł",
+        image: oczyszczaniewodorowe,
+      },
+
+      {
+        id: "face-3",
         name: "Peeling migdałowy Purles",
         description:
           "(Oparty zazwyczaj na kwasie migdałowym o stężeniu 40%), delikatny, ale skuteczny peeling chemiczny. Działa antybakteryjnie, reguluje sebum, rozjaśnia przebarwienia i stymuluje odnowę skóry bez silnego podrażnienia, co pozwala na wykonywanie go przez cały rok. Wskazania i Działanie: Typy cery: tłusta, mieszana, z niedoskonałościami, a także wrażliwa i z naczyńkami. Problemy: trądzik pospolity, zaskórniki, nierówny koloryt, pierwsze oznaki starzenia. Efekty: wygładzenie, oczyszczenie porów, rozjaśnienie plam pigmentacyjnych oraz poprawa jędrności skóry",
@@ -242,44 +255,26 @@ export const serviceCategories = [
       },
 
       {
-        id: "face-3",
-        name: "Zabieg z kwasem glikolowym",
-        description: "G-peel 40%. Głęboko złuszczający i regenerujący kwas glikolowy, który ma zdolność docierania aż do warstwy brodawkowatej skóry właściwej. Powoduje zmianę struktury naskórka, stymulując namnażanie nowych komórek i włókien kolagenowych, a także aktywuje procesy naprawy uszkodzeń powstałych z powodu promieniowania UV. Zmniejsza przebarwienia, poprawia kondycję i zwartość skóry. Ponadto minimalizuje drobne blizny i ślady po stanach zapalnych.",
-        duration: "60 min",
-        price: "000 zł",
-        image: gpeel,
-        imageFit: "contain"
-      },
-
-      {
-        id: "face-4",
-        name: "Zabieg sushi ceremony Purles",
-        description: "Jego głównym celem jest głębokie odżywienie skóry dojrzałej, redukcja zmarszczek oraz rozjaśnienie przebarwień i wyrównanie kolorytu cery. Główne zastosowanie i działanie zabiegu to: Redukcja zmarszczek: Wygładza drobne linie i poprawia napięcie skóry. Walka z przebarwieniami: Rozjaśnia plamy pigmentacyjne i wyrównuje koloryt. Silne antyoksydacje: Chroni komórki przed starzeniem i poprawia mikrokrążenie. Głębokie rozświetlenie: Przywraca zmęczonej cerze zdrowy, promienny wygląd.",
-        duration: "60 min",
-        price: "000 zł",
-        image: sushiCeremony,
-        imageFit: "contain"
-      },
-
-      {
-      id: "face-5",
+      id: "face-4",
       name: "A-Peel",
       description:
         "Jest to tzw. peeling bankietowy, idealny dla skóry odwodnionej, zmęczonej i wrażliwej. Działa bardzo łagodnie, głęboko nawilża, poprawia elastyczność naskórka i rozświetla cerę.",
       duration: "45 min",
-      price: "180 zł",
+      price: "160 zł",
       image: apeel,
       imageFit: "contain"
     },
 
-    {
-        id: "face-6",
-        name: "Zabieg Microbiome Therapy",
-        description: "Zabieg dedykowany cerze suchej, wrażliwej, nadreaktywnej. Działanie i efekty: odbudowa mikrobiomu: przywraca prawidłową florę bakteryjną naskórka, wzmocnienie barier: Uszczelnia i reperuje zniszczoną barierę hydrolipidową, głębokie nawilżenie: niweluje uczucie ściągnięcia, suchości i łuszczenia, kojenie podrażnień: błyskawicznie łagodzi zaczerwienienia i stany zapalne, dając uczucie komfortu.",
+       {
+        id: "face-5",
+        name: "Masaż Kobido",
+        description:
+          "Ten wyjątkowy japoński masaż intensywnie pobudza skórę, poprawia jej jędrność i owal twarzy, wygładza drobne zmarszczki oraz pomaga zmniejszyć napięcia mięśniowe. To połączenie skutecznej pielęgnacji z głębokim relaksem.",
         duration: "60 min",
-        price: "000 zł",
+        price: "170 zł",
         image: null,
       },
+
     ],
   },
 
@@ -291,18 +286,40 @@ export const serviceCategories = [
       "Zaawansowane zabiegi dobierane indywidualnie do potrzeb i aktualnej kondycji skóry.",
 
     treatments: [
-      {
+        {
         id: "specialist-1",
-        name: "Zabieg Sushi Ceremony Purles",
-        description:
-          "Opis zabiegu.",
+        name: "Zabieg sushi ceremony Purles",
+        description: "Jego głównym celem jest głębokie odżywienie skóry dojrzałej, redukcja zmarszczek oraz rozjaśnienie przebarwień i wyrównanie kolorytu cery. Główne zastosowanie i działanie zabiegu to: Redukcja zmarszczek: Wygładza drobne linie i poprawia napięcie skóry. Walka z przebarwieniami: Rozjaśnia plamy pigmentacyjne i wyrównuje koloryt. Silne antyoksydacje: Chroni komórki przed starzeniem i poprawia mikrokrążenie. Głębokie rozświetlenie: Przywraca zmęczonej cerze zdrowy, promienny wygląd.",
         duration: "60 min",
-        price: "300 zł",
-        image: null,
+        price: "000 zł",
+        image: sushiCeremony,
+        imageFit: "contain"
       },
 
       {
         id: "specialist-2",
+        name: "Zabieg z kwasem glikolowym (G-Peel)",
+        description:
+          "G-peel 40 %. Głęboko złuszczający i regenerujący kwas glikolowy, który ma zdolność docierania aż do warstwy brodawkowatej skóry właściwej. Powoduje zmianę struktury naskórka, stymulując namnażanie nowych komórek i włókien kolagenowych, a także aktywuje procesy naprawy uszkodzeń powstałych z powodu promieniowania UV. Zmniejsza przebarwienia, poprawia kondycję i zwartość skóry. Ponadto minimalizuje drobne blizny i ślady po stanach zapalnych.",
+        duration: "60 min",
+        price: "170 zł",
+        image: gpeel,
+        imageFit: "contain"
+      },
+
+      {
+        id: "specialist-3",
+        name: "Zabieg z kwasem ferulowym (F-Peel)",
+        description:
+          "F-Peel to doskonały peeling o niezwykłych właściwościach rozjaśniających, odmładzających, regenerujących i minimalizujących przebarwienia. Kwas ferulowy redukuje aktywność enzymów tyrozynazy, natomiast floretyna – elastazy, przywracając skórze równy koloryt i młody, świeży wygląd. Kwas ferulowy działa silnie antyoksydacyjnie, chroniąc DNA komórek i neutralizując wolne rodniki. Peeling ma zwiększoną zdolność penetracji naskórka dzięki zawartej floretynie. Dodatkowo kwas mlekowy nawilża i stymuluje syntezę ceramidów, zapewniając prawidłową ochronę skóry.",
+        duration: "60 min",
+        price: "160 zł",
+        image: fpeel,
+        imageFit: "contain"
+      },
+
+      {
+        id: "specialist-4",
         name: "Zabieg Microbiome Therapy",
         description: "Zabieg dedykowany cerze suchej, wrażliwej, nadreaktywnej. Działanie i efekty: odbudowa mikrobiomu: przywraca prawidłową florę bakteryjną naskórka, wzmocnienie barier: Uszczelnia i reperuje zniszczoną barierę hydrolipidową, głębokie nawilżenie: niweluje uczucie ściągnięcia, suchości i łuszczenia, kojenie podrażnień: błyskawicznie łagodzi zaczerwienienia i stany zapalne, dając uczucie komfortu.",
         duration: "60 min",
@@ -311,18 +328,27 @@ export const serviceCategories = [
       },
 
       {
-        id: "specialist-3",
-        name: "Masaż Kobido",
-        description: "Kobido – naturalny lifting twarzy. Ten wyjątkowy japoński masaż intensywnie pobudza skórę, poprawia jej jędrność i owal twarzy, wygładza drobne zmarszczki oraz pomaga zmniejszyć napięcia mięśniowe. To połączenie skutecznej pielęgnacji z głębokim relaksem.",
+        id: "specialist-5",
+        name: "Mezoterapia mikroigłowa",
+        description: "Mezoterapia mikroigłowa to zabieg polegający na kontrolowanym nakłuwaniu skóry za pomocą cienkich igiełek. Pobudza to organizm do produkcji nowego kolagenu i elastyny, poprawia jędrność cery, zmniejsza widoczność zmarszczek oraz pomaga wchłaniać składniki odżywcze w głębokie warstwy skóry.",
         duration: "60 min",
-        price: "000 zł",
+        price: "250 zł",
+        image: null,
+      },
+
+      {
+        id: "specialist-6",
+        name: "Peeling kawitacyjny + maska",
+        description: "Peeling kawitacyjny to bezbolesny, bezpieczny zabieg oczyszczający skórę za pomocą fal ultradźwiękowych. Wywołują one zjawisko kawitacji w zwilżonej wodą lub tonikiem czerwie, usuwając martwy naskórek, nadmiar sebum i zaskórniki. Poprawia krążenie, wygładza cerę i zwiększa wchłanianie kosmetyków",
+        duration: "60 min",
+        price: "120 zł",
         image: null,
       },
     ],
   },
 
   {
-    id: "body",
+    id: "eyebrows-and-lashes",
     number: "03",
     name: "Brwi i rzęsy",
     description:
@@ -330,27 +356,27 @@ export const serviceCategories = [
 
     treatments: [
       {
-        id: "body-1",
+        id: "eyebrows-and-lashes-1",
         name: "Lifting rzęs",
         description: "Zabieg polegający na trwałym uniesieniu i podkręceniu naturalnych rzęs przy pomocy specjalnych wałeczków silikonowych oraz preparatów zmieniających kształt włosa.",
         duration: "60 min",
         price: "000 zł",
-        image: null,
+        image: lifting,
       },
 
       {
-        id: "body-2",
-        name: "Nazwa zabiegu",
-        description: "Opis zabiegu.",
+        id: "eyebrows-and-lashes-2",
+        name: "Henna brwi",
+        description: "",
         duration: "60 min",
         price: "000 zł",
         image: null,
       },
 
       {
-        id: "body-3",
-        name: "Nazwa zabiegu",
-        description: "Opis zabiegu.",
+        id: "eyebrows-and-lashes-3",
+        name: "Henna cała",
+        description: "",
         duration: "60 min",
         price: "000 zł",
         image: null,
@@ -359,67 +385,99 @@ export const serviceCategories = [
   },
 
   {
-    id: "brows",
+    id: "nails",
     number: "04",
-    name: "Usta",
-    description:
-      "Zabiegi podkreślające naturalną oprawę oka i dopasowane do rysów twarzy.",
-
-    treatments: [
-      {
-        id: "brows-1",
-        name: "Laminacja brwi",
-        description:
-          "Zabieg pozwalający uporządkować, wymodelować i optycznie zagęścić brwi.",
-        duration: "60 min",
-        price: "150 zł",
-        image: null,
-      },
-
-      {
-        id: "brows-2",
-        name: "Stylizacja brwi",
-        description:
-          "Precyzyjne nadanie kształtu brwiom dopasowanego do rysów twarzy.",
-        duration: "30 min",
-        price: "80 zł",
-        image: null,
-      },
-
-      {
-        id: "brows-3",
-        name: "Nazwa zabiegu",
-        description: "Opis zabiegu.",
-        duration: "45 min",
-        price: "000 zł",
-        image: null,
-      },
-    ],
-  },
-
-  {
-    id: "dlonie-i-paznokcie",
-    number: "05",
     name: "Stylizacja paznokci",
     description:
-      "Pielęgnacja i stylizacja paznokci z naciskiem na estetykę, komfort i trwały efekt.",
+      "Stylizacje i pielęgnacja paznokci z naciskiem na estetykę, komfort i trwały efekt.",
 
     treatments: [
       {
-        id: "hands-1",
-        name: "Nazwa zabiegu",
-        description: "Opis zabiegu.",
+        id: "nails-1",
+        name: "Manicure klasyczny",
+        description:
+          "",
         duration: "60 min",
-        price: "000 zł",
+        price: "90 zł",
+        image: null,
+      },
+
+       {
+        id: "nails-2",
+        name: "Manicure hybrydowy",
+        description:
+          "",
+        duration: "60 min",
+        price: "110 zł",
+        image: null,
+      },
+
+       {
+        id: "nails-3",
+        name: "Manicure żelowy, krótkie paznokcie",
+        description:
+          "",
+        duration: "60 min",
+        price: "130 zł",
+        image: null,
+      },
+
+       {
+        id: "nails-4",
+        name: "Manicure żelowy, długie paznokcie",
+        description:
+          "",
+        duration: "60 min",
+        price: "140 zł",
+        image: null,
+      },
+
+       {
+        id: "nails-5",
+        name: "Pedicure klasyczny",
+        description:
+          "",
+        duration: "60 min",
+        price: "130 zł",
+        image: null,
       },
 
       {
-        id: "hands-2",
-        name: "Nazwa zabiegu",
+        id: "nails-6",
+        name: "Pedicure hybrydowy",
+        description:
+          "",
+        duration: "30 min",
+        price: "160 zł",
+        image: null,
+      },
+
+    ],
+  },
+
+  {
+    id: "makeup",
+    number: "05",
+    name: "Makijaż permanentny",
+    description:
+      "Makijaże permanentne wykonywane z dbałością o naturalny efekt i dopasowane do kształtu twarzy.",
+
+
+    treatments: [
+      {
+        id: "makeup-1",
+        name: "Ombre",
         description: "Opis zabiegu.",
         duration: "60 min",
-        price: "000 zł",
-        image: null,
+        price: "700 zł",
+      },
+
+      {
+        id: "makeup-2",
+        name: "Metoda włosa",
+        description: "",
+        duration: "60 min",
+        price: "800 zł",
       },
     ],
   },
@@ -427,26 +485,35 @@ export const serviceCategories = [
   {
     id: "relax",
     number: "06",
-    name: "Relaks i pielęgnacja",
+    name: "Pielęgnacja ciała",
     description:
       "Zabiegi stworzone z myślą o odprężeniu, regeneracji i chwili tylko dla siebie.",
 
     treatments: [
       {
         id: "relax-1",
-        name: "Nazwa zabiegu",
-        description: "Opis zabiegu.",
+        name: "Depilacja woskiem - ręce",
+        description: "",
         duration: "60 min",
-        price: "000 zł",
+        price: "80 zł",
         image: null,
       },
 
       {
         id: "relax-2",
-        name: "Nazwa zabiegu",
-        description: "Opis zabiegu.",
+        name: "Depilacja woskiem - nogi",
+        description: "",
         duration: "60 min",
-        price: "000 zł",
+        price: "100 zł",
+        image: null,
+      },
+
+      {
+        id: "relax-3",
+        name: "Depilacja woskiem - bikini brazylijskie",
+        description: "",
+        duration: "60 min",
+        price: "80 zł",
         image: null,
       },
     ],

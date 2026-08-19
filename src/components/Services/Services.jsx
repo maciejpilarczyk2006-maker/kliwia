@@ -13,9 +13,20 @@ function Services() {
     setOpenCategory((current) => (current === id ? null : id));
   };
 
+  /*
+    Kategorie, w których NIE chcemy renderować zdjęć.
+  */
+  const categoriesWithoutImages = [
+    "nails",
+    "makeup",
+    "relax",
+  ];
+
   return (
     <section className="services section" id="services">
       <div className="container">
+
+        {/* NAGŁÓWEK SEKCJI */}
         <div className="services-heading">
           <p className="section-eyebrow">
             {servicesSection.eyebrow}
@@ -30,12 +41,13 @@ function Services() {
           </p>
         </div>
 
+        {/* KATEGORIE */}
         <div className="services-accordion">
           {serviceCategories.map((category) => {
             const isOpen = openCategory === category.id;
 
-            const isNailsCategory =
-              category.id === "dlonie-i-paznokcie";
+            const hasNoImages =
+              categoriesWithoutImages.includes(category.id);
 
             return (
               <article
@@ -44,6 +56,7 @@ function Services() {
                 }`}
                 key={category.id}
               >
+                {/* PRZYCISK KATEGORII */}
                 <button
                   type="button"
                   className="service-category-trigger"
@@ -72,6 +85,7 @@ function Services() {
                   </span>
                 </button>
 
+                {/* ROZWIJANA ZAWARTOŚĆ */}
                 <div
                   id={`service-panel-${category.id}`}
                   className="service-category-panel"
@@ -81,20 +95,29 @@ function Services() {
                       {category.treatments.map((treatment) => (
                         <article
                           className={`treatment-card ${
-                            isNailsCategory
+                            hasNoImages
                               ? "treatment-card--no-image"
                               : ""
                           }`}
                           key={treatment.id}
                         >
-                          {!isNailsCategory && (
-<div
-  className={`treatment-image ${
-    treatment.imageFit === "contain"
-      ? "treatment-image--contain"
-      : ""
-  }`}
->                              {treatment.image ? (
+                          {/* 
+                            ZDJĘCIE
+
+                            Renderujemy je tylko wtedy,
+                            gdy dana kategoria NIE znajduje się
+                            na liście categoriesWithoutImages.
+                          */}
+
+                          {!hasNoImages && (
+                            <div
+                              className={`treatment-image ${
+                                treatment.imageFit === "contain"
+                                  ? "treatment-image--contain"
+                                  : ""
+                              }`}
+                            >
+                              {treatment.image ? (
                                 <img
                                   src={treatment.image}
                                   alt={treatment.name}
@@ -109,6 +132,7 @@ function Services() {
                             </div>
                           )}
 
+                          {/* TREŚĆ ZABIEGU */}
                           <div className="treatment-content">
                             <div className="treatment-top">
                               <h4>{treatment.name}</h4>
@@ -120,6 +144,7 @@ function Services() {
                               )}
                             </div>
 
+                            {/* CZAS + CENA */}
                             {(treatment.duration ||
                               treatment.price) && (
                               <div className="treatment-meta">
