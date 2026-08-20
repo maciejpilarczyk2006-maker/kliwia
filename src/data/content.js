@@ -39,6 +39,9 @@ import kosmetyki from "../assets/images/about/purles.png";
 import dezynfekcja from "../assets/images/about/dezynfekcja-1.jpg";
 import lifting from "../assets/images/services/lifting.jpg";
 import fpeel from "../assets/images/services/f-peel.jpg";
+import mezoterapia from "../assets/images/services/mezoterapia.jpg";
+import microbiome from "../assets/images/services/microbiome.jpg";
+
 
 export const certificatesSection = {
   eyebrow: "CERTYFIKATY",
@@ -324,7 +327,8 @@ export const serviceCategories = [
         description: "Zabieg dedykowany cerze suchej, wrażliwej, nadreaktywnej. Działanie i efekty: odbudowa mikrobiomu: przywraca prawidłową florę bakteryjną naskórka, wzmocnienie barier: Uszczelnia i reperuje zniszczoną barierę hydrolipidową, głębokie nawilżenie: niweluje uczucie ściągnięcia, suchości i łuszczenia, kojenie podrażnień: błyskawicznie łagodzi zaczerwienienia i stany zapalne, dając uczucie komfortu.",
         duration: "60 min",
         price: "000 zł",
-        image: null,
+        image: microbiome,
+        imageFit: "contain"
       },
 
       {
@@ -333,7 +337,7 @@ export const serviceCategories = [
         description: "Mezoterapia mikroigłowa to zabieg polegający na kontrolowanym nakłuwaniu skóry za pomocą cienkich igiełek. Pobudza to organizm do produkcji nowego kolagenu i elastyny, poprawia jędrność cery, zmniejsza widoczność zmarszczek oraz pomaga wchłaniać składniki odżywcze w głębokie warstwy skóry.",
         duration: "60 min",
         price: "250 zł",
-        image: null,
+        image: mezoterapia,
       },
 
       {
@@ -360,7 +364,7 @@ export const serviceCategories = [
         name: "Lifting rzęs",
         description: "Zabieg polegający na trwałym uniesieniu i podkręceniu naturalnych rzęs przy pomocy specjalnych wałeczków silikonowych oraz preparatów zmieniających kształt włosa.",
         duration: "60 min",
-        price: "000 zł",
+        price: "130 zł",
         image: lifting,
       },
 
@@ -369,7 +373,7 @@ export const serviceCategories = [
         name: "Henna brwi",
         description: "",
         duration: "60 min",
-        price: "000 zł",
+        price: "60 zł",
         image: null,
       },
 
@@ -378,7 +382,7 @@ export const serviceCategories = [
         name: "Henna cała",
         description: "",
         duration: "60 min",
-        price: "000 zł",
+        price: "70 zł",
         image: null,
       },
     ],
